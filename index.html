@@ -2,41 +2,51 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Rock Paper Scissors Part 2</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <title>Hangman - Fruit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
-<body>
-  
+<body background="assets/images/orange.jpg">
 
-  <div id="game">
-      <div class="container">
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <div class="jumbotron text-center">
-                    <h2><u>Hangman</u></h2>
-                </div>
-                <div class="jumbotron text-center" id="get-started">
-                    <h2>Press any key to get started!</h2>
-                </div>
-                <div class="jumbotron text-center" id="hangman">
-                    <h2><span id="guess-text"></span></h2>
-                    <br>
-                    <h2>Letters Already Guessed:</h2>
-                    <h2><span id="guessed-text"></span></h2>
-                    <h2>Guesses left: <span id="guesses-left-count-text"></span></h2>
-                </div>
-                <div class="jumbotron">
-                    <h2>Wins: <span id="wins-count-text"></span></h2>
-                    <h2>Losses: <span id="losses-count-text"></span></h2>
+
+    <div id="game">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 text-center">
+                    <div class="jumbotron">
+                        <h2>
+                            <u>Hangman - Fruit</u>
+                        </h2>
+                        <div id="get-started">
+                            <h2>Press any key to get started!</h2>
+                        </div>
+                        <div id="hangman">
+                            <h2>
+                                <span id="guess-text"></span>
+                            </h2>
+                            <br>
+                            <h2>Letters Already Guessed:</h2>
+                            <h2>
+                                <span id="guessed-text"></span>
+                            </h2>
+                            <h2>Guesses left:
+                                <span id="guesses-left-count-text"></span>
+                            </h2>
+                        </div>
+                        <h2>Wins:
+                            <span id="wins-count-text"></span>
+                        </h2>
+                        <h2>Losses:
+                            <span id="losses-count-text"></span>
+                        </h2>
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
-  </div>
+    </div>
 
-  <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 

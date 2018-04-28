@@ -13,7 +13,7 @@ var game = {
     wins: 0,
     losses: 0,
     guessesLeft: 15,
-    words: ["HELLO", "HOUSE", "PROGRAMMING", "TELEPHONE", "BUILDING"],
+    words: ["apple", "banana", "berry", "blackberry", "blueberry", "boysenberry", "breadfruit", "cantaloupe", "cherry", "citron", "citrus", "coconut", "crabapple", "cranberry", "current", "date", "dragonfruit", "durian", "elderberry", "fig", "grape", "grapefruit", "guava", "honeydew", "jackfruit", "kiwi", "kumquat", "lemon", "lime", "lingonberry", "loquat", "lychee", "mango", "marionberry", "melon", "mulberry", "nectarine", "orange", "papaya", "peach", "pear", "persimmon", "pineapple", "plantain", "plum", "pomegranite", "pomelo", "prune", "quince", "raisin", "raspberry", "strawberry", "tangelo", "tangerine", "watermelon"],
 
     initialSetup: function () {
         hangman.style.display = "none";
@@ -27,7 +27,7 @@ var game = {
     newGame: function () {
         this.lettersGuessed = "";
         this.guessesLeft = 15;
-        this.currentWord = this.words[Math.floor(Math.random() * this.words.length)];
+        this.currentWord = this.words[Math.floor(Math.random() * this.words.length)].toLowerCase();
         this.update();
     },
 
@@ -110,7 +110,7 @@ document.onkeyup = function (event) {
         return // Invalid input
     }
 
-    var key = event.key.toUpperCase();
+    var key = event.key.toLowerCase();
     game.guess(key);
 }
 
