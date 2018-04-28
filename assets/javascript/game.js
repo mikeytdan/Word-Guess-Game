@@ -26,7 +26,7 @@ var game = {
 
     newGame: function () {
         this.lettersGuessed = "";
-        this.guessesLeft = 15;
+        this.guessesLeft = 10;
         this.currentWord = this.words[Math.floor(Math.random() * this.words.length)].toLowerCase();
         this.update();
     },
@@ -88,7 +88,12 @@ var game = {
             this.lettersGuessed += key;
         }
 
-        this.guessesLeft -= 1;
+        if (this.currentWord.indexOf(key) == -1) {
+            this.guessesLeft -= 1;
+            this.update();
+            return // Already guessed that letter
+        }
+        
         this.update();
 
         if (this.didWin()) {
