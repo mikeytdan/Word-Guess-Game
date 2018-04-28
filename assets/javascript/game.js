@@ -12,7 +12,7 @@ var game = {
     started: false,
     wins: 0,
     losses: 0,
-    guessesLeft: 15,
+    guessesLeft: 10,
     words: ["apple", "banana", "berry", "blackberry", "blueberry", "boysenberry", "breadfruit", "cantaloupe", "cherry", "citron", "citrus", "coconut", "crabapple", "cranberry", "current", "date", "dragonfruit", "durian", "elderberry", "fig", "grape", "grapefruit", "guava", "honeydew", "jackfruit", "kiwi", "kumquat", "lemon", "lime", "lingonberry", "loquat", "lychee", "mango", "marionberry", "melon", "mulberry", "nectarine", "orange", "papaya", "peach", "pear", "persimmon", "pineapple", "plantain", "plum", "pomegranite", "pomelo", "prune", "quince", "raisin", "raspberry", "strawberry", "tangelo", "tangerine", "watermelon"],
 
     initialSetup: function () {
