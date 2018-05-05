@@ -90,8 +90,6 @@ var game = {
 
         if (this.currentWord.indexOf(key) == -1) {
             this.guessesLeft -= 1;
-            this.update();
-            return // Already guessed that letter
         }
         
         this.update();
@@ -116,6 +114,7 @@ document.onkeyup = function (event) {
     }
 
     var key = event.key.toLowerCase();
+    console.log(key);
     game.guess(key);
 }
 
